@@ -17,9 +17,9 @@ interface TitleProps {
     subTitle?: string;
   };
   color?: {
-    title: string;
-    subTitle: string;
-    background: string;
+    title?: string;
+    subTitle?: string;
+    background?: string;
   };
   direction?: "left" | "right";
 }

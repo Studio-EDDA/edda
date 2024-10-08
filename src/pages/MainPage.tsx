@@ -1,5 +1,9 @@
 import { Helmet } from "react-helmet";
 
+import ArtworkSection from "@components/main/ArtworkSection";
+
+import { ArtworkProvider } from "@contexts/main/artwork.context";
+
 import { PageWrapper, Page } from "@styles/main/index.style";
 
 import type { FC } from "react";
@@ -13,6 +17,9 @@ const MainPage: FC = () => {
         <Helmet>
           <title>{TITLE}</title>
         </Helmet>
+        <ArtworkProvider>
+          <ArtworkSection />
+        </ArtworkProvider>
       </Page>
     </PageWrapper>
   );

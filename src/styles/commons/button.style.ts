@@ -6,10 +6,7 @@ export const Button = styled.button`
   display: none;
   background: transparent;
   border: 0;
-
-  & > img {
-    cursor: pointer;
-  }
+  cursor: pointer;
 
   @media screen and (max-width: ${SCREEN.tablet}) {
     display: flex;
