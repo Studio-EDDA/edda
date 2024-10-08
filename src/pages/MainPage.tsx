@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet";
 
+import TypoSection from "@components/main/TypoSection";
+
 import { PageWrapper, Page } from "@styles/main/index.style";
 
 import type { FC } from "react";
@@ -13,6 +15,7 @@ const MainPage: FC = () => {
         <Helmet>
           <title>{TITLE}</title>
         </Helmet>
+        <TypoSection />
       </Page>
     </PageWrapper>
   );
