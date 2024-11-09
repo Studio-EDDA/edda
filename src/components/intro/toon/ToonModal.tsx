@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 
-import NewModal from "@components/commons/NewModal";
+import Modal from "@components/commons/Modal";
 
 import {
   ModalBox,
@@ -55,7 +55,7 @@ const ToonModal: FC<ModalProps> = ({
   }, [currentPage]);
 
   return (
-    <NewModal
+    <Modal
       ref={modalRef}
       portalKey="toon-modal"
       displayModal={displayModal}
@@ -139,7 +139,7 @@ const ToonModal: FC<ModalProps> = ({
           </ModalItemWrapper>
         </ModalBox>
       </ModalWrapper>
-    </NewModal>
+    </Modal>
   );
 };
 

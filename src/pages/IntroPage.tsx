@@ -2,8 +2,7 @@ import { Helmet } from "react-helmet";
 
 import MainVisual from "@components/intro/MainVisual";
 import StudioInfo from "@components/intro/StudioInfo";
-// import StudioToon from "@components/intro/StudioToon";
-import NewStudioToon from "@components/intro/NewStudioToon";
+import StudioToon from "@components/intro/StudioToon";
 
 import { PageWrapper, Page } from "@styles/intro/index.style";
 
@@ -20,8 +19,7 @@ const IntroPage: FC = () => {
         </Helmet>
         <MainVisual />
         <StudioInfo />
-        {/* <StudioToon /> */}
-        <NewStudioToon />
+        <StudioToon />
       </Page>
     </PageWrapper>
   );
